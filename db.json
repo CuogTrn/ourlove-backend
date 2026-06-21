@@ -1,0 +1,60 @@
+{
+  "memories": [],
+  "bucketList": [
+    {
+      "id": "bl001",
+      "task": "Cùng nhau ngắm hoàng hôn trên biển",
+      "isCompleted": false,
+      "completedAt": null
+    },
+    {
+      "id": "bl002",
+      "task": "Nấu một bữa ăn lãng mạn cho nhau",
+      "isCompleted": true,
+      "completedAt": "2026-02-14"
+    },
+    {
+      "id": "bl003",
+      "task": "Đi du lịch Đà Lạt cùng nhau",
+      "isCompleted": false,
+      "completedAt": null
+    },
+    {
+      "id": "bl004",
+      "task": "Chụp ảnh cưới concept Hàn Quốc",
+      "isCompleted": false,
+      "completedAt": null
+    },
+    {
+      "id": "bl005",
+      "task": "Viết thư tay tặng nhau",
+      "isCompleted": true,
+      "completedAt": "2026-03-08"
+    }
+  ],
+  "timeCapsules": [
+    {
+      "id": "tc001",
+      "message": "Em yêu, nếu đang đọc dòng này nghĩa là chúng mình đã yêu nhau được hơn 1 năm rồi. Anh muốn nói rằng anh rất hạnh phúc vì có em bên cạnh. Cảm ơn em vì tất cả! ❤️",
+      "unlockDate": "2026-12-22",
+      "createdAt": "2025-12-25"
+    },
+    {
+      "id": "tc002",
+      "message": "Hôm nay là Valentine đầu tiên của chúng mình. Dù có bất kỳ điều gì xảy ra, anh hứa sẽ luôn ở bên em. Yêu em nhiều lắm! 🌹",
+      "unlockDate": "2026-02-14",
+      "createdAt": "2026-01-01"
+    },
+    {
+      "id": "tc003",
+      "message": "Gửi cho tương lai: Hãy nhớ rằng mỗi khó khăn đều là thử thách để tình yêu thêm bền chặt. Đừng bao giờ bỏ cuộc nhé! 💪❤️",
+      "unlockDate": "2027-06-22",
+      "createdAt": "2026-06-01"
+    }
+  ],
+  "settings": {
+    "avatar1": "",
+    "avatar2": "",
+    "loveStartDate": "2025-12-22T00:00:00"
+  }
+}
