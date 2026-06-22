@@ -60,6 +60,17 @@ app.use(cors());
 app.use(express.json());
 
 // ============================================================
+// HEALTH CHECK ENDPOINT
+// ============================================================
+app.get('/health', (req, res) => {
+    res.status(200).json({ 
+        status: 'ok', 
+        timestamp: new Date(),
+        service: 'our-love-story-backend'
+    });
+});
+
+// ============================================================
 // CẤU HÌNH ADMIN
 // ============================================================
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "ourlove2025";
@@ -380,6 +391,17 @@ app.delete("/api/timecapsule/:id", async (req, res) => {
 });
 
 // ============================================================
+// GLOBAL ERROR HANDLER
+// ============================================================
+app.use((err, req, res, next) => {
+    console.error('[ERROR]', err.message);
+    res.status(err.status || 500).json({
+        success: false,
+        message: err.message || 'Internal server error'
+    });
+});
+
+// ============================================================
 // API ROUTES - CÀI ĐẶT (SETTINGS & AVATARS)
 // ============================================================
 
@@ -464,7 +486,7 @@ app.put("/api/settings", async (req, res) => {
         await initializeDatabase();
 
         // Khởi động server
-        app.listen(PORT, () => {
+        app.listen(PORT, '0.0.0.0', () => {
             console.log(`\n  🚀 OUR LOVE STORY - Backend Server (PostgreSQL)`);
             console.log(`  📍 Đang chạy tại: http://localhost:${PORT}`);
             console.log(`  🗄️  Database: PostgreSQL + Sequelize\n`);
